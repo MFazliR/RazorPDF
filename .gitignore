@@ -1,0 +1,13 @@
+# Ignore hidden IDE settings
+.vscode/
+.idea/
+*.iml
+
+# Ignore Android local build files inside Source_Code
+**/build/
+**/.gradle/
+local.properties
+
+# Ignore system junk
+.DS_Store
+Thumbs.db
