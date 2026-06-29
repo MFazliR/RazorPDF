@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/tvScanStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No pages scanned yet."
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Page Size:" android:textStyle="bold" android:textColor="@color/black"/>
+    <Spinner android:id="@+id/spinnerScannerPageSize" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginBottom="12dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Margins:" android:textStyle="bold" android:textColor="@color/black"/>
+    <Spinner android:id="@+id/spinnerScannerMargins" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnCapturePage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Capture Document Page"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnCompilePdf"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Compile &amp; Save PDF"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:visibility="gone"/>
+</LinearLayout>
